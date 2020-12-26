@@ -1,0 +1,10 @@
+body {
+	font-family: "Manrope", sans-serif;
+}
+
+.map-tab__map {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
