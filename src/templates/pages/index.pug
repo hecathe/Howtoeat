@@ -15,23 +15,25 @@ block content
                 .map-tab__tab-wrap(data-tab)
                     .map-tab__nav
                         label.map-tab__label
-                            input.map-tab__input#tab-1(type="radio" name="tabs" value="tab-1" data-nav-tab="tab-1" checked)
+                            input.map-tab__input.visually-hidden#tab-1(type="radio" name="tabs" value="tab-1" data-nav-tab="tab-1" checked)
                             span.map-tab__tab-name Проект Собиратор
                         label.map-tab__label
-                            input.map-tab__input#tab-2(type="radio" name="tabs" value="tab-2" data-nav-tab="tab-2")
-                            span.map-tab__tab-name Пункт приёма в Мега Икея Химки
+                            input.map-tab__input.visually-hidden#tab-2(type="radio" name="tabs" value="tab-2" data-nav-tab="tab-2")
+                            span.map-tab__tab-name Пункт приёма в Мега<br> Икея Химки
                         label.map-tab__label
-                            input.map-tab__input#tab-3(type="radio" name="tabs" value="tab-3" data-nav-tab="tab-3")
-                            span.map-tab__tab-name Контейнеры компании Эколайн в САО и ЦАО г. Москвы
+                            input.map-tab__input.visually-hidden#tab-3(type="radio" name="tabs" value="tab-3" data-nav-tab="tab-3")
+                            span.map-tab__tab-name Контейнеры компании Эколайн<br> в САО и ЦАО г. Москвы
                         label.map-tab__label
-                            input.map-tab__input#tab-4(type="radio" name="tabs" value="tab-4" data-nav-tab="tab-4")
-                            span.map-tab__tab-name Контейнеры компании МКМ-Логистика
+                            input.map-tab__input.visually-hidden#tab-4(type="radio" name="tabs" value="tab-4" data-nav-tab="tab-4")
+                            span.map-tab__tab-name Контейнеры компании<br> МКМ-Логистика
                     .map-tab__tabs
                         .map-tab__map.active#tab-content-1(data-item-tab="tab-1")
-                            img(src="assets/images/map-min.png", alt="")
+                            img.map-tab__img(src="assets/images/bottle-min.png", alt="")
                         .map-tab__map#tab-content-2(data-item-tab="tab-2")
-                            img(src="assets/images/bottle-min.png", alt="")
+                            img.map-tab__img(src="assets/images/map-min.png", alt="")
                         .map-tab__map#tab-content-3(data-item-tab="tab-3")
-                            img(src="assets/images/map-min.png", alt="")
+                            img.map-tab__img(src="assets/images/bottle-min.png", alt="")
                         .map-tab__map#tab-content-4(data-item-tab="tab-4")
-                            img(src="assets/images/bottle-min.png", alt="")
+                            img.map-tab__img(src="assets/images/map-min.png", alt="")
+                    .map-tab__small Ближайший пункт приёма пластиковых пакетов на переработку вы можете найти на интерактивной карте Greenpeace — 
+                        a.map-tab__small-link(href="#") recyclemap.ru
