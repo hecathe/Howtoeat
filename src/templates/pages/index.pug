@@ -6,6 +6,172 @@ block variables
 
 block content
     main
+        section.banner
+            .container
+                .banner__text-wrap
+                    h1.banner__title НОВЫЙ ECO ПОДХОД
+                    p.banner__text Выбирая упаковку из пластика и сдавая ее на переработку после использования, мы возвращаем ценные ресурсы в цикл производства.
+                    a.banner__btn(href="#why") Почему мы перешли на пластик?
+                .banner__img-wrap
+                    img(src="assets/images/transparent-food-container-min.png", srcset="assets/images/transparent-food-container@2x-min.png" alt="Новый eco подход")
+        section.package
+            .container
+                h2.package__title.title Наша упаковка
+                ul.package__list
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="70" height="40")
+                                use(xlink:href="assets/images/sprite.svg#icon-lunch-box")
+                        p.package__text Прямоугольные контейнеры под<br> горячее
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 5
+                            .package__marker-text PP
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="60" height="35")
+                                use(xlink:href="assets/images/sprite.svg#icon-wooden-bowl")
+                        p.package__text Супы и каши
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 5
+                            .package__marker-text PP
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="30" height="54")
+                                use(xlink:href="assets/images/sprite.svg#icon-reusable-bottle")
+                        p.package__text Бутылки под<br> смузи
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 1
+                            .package__marker-text PETE
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="35" height="55")
+                                use(xlink:href="assets/images/sprite.svg#icon-wooden-tableware")
+                        p.package__text Приборы
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 5
+                            .package__marker-text PP
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="35" height="55")
+                                use(xlink:href="assets/images/sprite.svg#icon-pot")
+                        p.package__text Соусники
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 5
+                            .package__marker-text PP
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="35" height="55")
+                                use(xlink:href="assets/images/sprite.svg#icon-desert-pack")
+                        p.package__text Упаковка и<br> десерты
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 1
+                            .package__marker-text PETE
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="40" height="57")
+                                use(xlink:href="assets/images/sprite.svg#icon-fertilizer")
+                        p.package__text Термопакеты, металлизированная<br> пленка
+                    li.package__item
+                        .package__icon
+                            svg.package__svg(width="48" height="62")
+                                use(xlink:href="assets/images/sprite.svg#icon-recycle-bag")
+                        p.package__text Пакеты
+                        .package__marker
+                            .package__arrows
+                                svg.package__svg(width="24" height="24")
+                                    use(xlink:href="assets/images/sprite.svg#arrows")
+                                span.package__marker-num 4
+                            .package__marker-text LDPE
+
+        section.preparation
+            .container
+                h2.preparation__title.title Как подготовить упаковку<br> к переработке
+                ul.preparation__list
+                    li.preparation__item
+                        .preparation__icon-wrap
+                            svg.preparation__svg(width="40" height="40")
+                                use(xlink:href="assets/images/sprite.svg#icon-faucet")
+                        p.preparation__text Помойте упаковку и снимите все наклейки.
+                    li.preparation__item
+                        .preparation__icon-wrap
+                            svg.preparation__svg(width="40" height="40")
+                                use(xlink:href="assets/images/sprite.svg#icon-recycle-bin")
+                        p.preparation__text Верните ее нашему курьеру при следующем заказе или выбросите в специальную урну для пластика.
+                    li.preparation__item
+                        .preparation__icon-wrap
+                            svg.preparation__svg(width="50" height="50")
+                                use(xlink:href="assets/images/sprite.svg#icon-truck")
+                        p.preparation__text Вся собранная упаковка отправляется на переработку на завод.
+                    li.preparation__item
+                        .preparation__icon-wrap
+                            svg.preparation__svg(width="40" height="40")
+                                use(xlink:href="assets/images/sprite.svg#icon-factory")
+                        p.preparation__text На заводе упаковку сортируют и перерабатывают.
+                    li.preparation__item
+                        .preparation__icon-wrap
+                            svg.preparation__svg(width="40" height="40")
+                                use(xlink:href="assets/images/sprite.svg#icon-leaf")
+                        p.preparation__text Вся переработанная упаковка получает вторую жизнь.
+
+        section.cause#why
+            .container
+                .cause__img-wrap
+                    img.cause__img(src="assets/images/recycle-min.png", srcset="assets/images/recycle@2x-min.png" alt="Почему мы переходим на пластик")
+                .cause__text-wrap
+                    h2.cause__title.title Почему мы переходим на пластик
+                    p.cause__notice Используя и сдавая на переработку посуду и приборы из пластика, мы возвращаем ценные ресурсы в цикл производства. 
+                    p.cause__text Раньше мы использовали упаковку компостируемую из сахарного и кукурузного крахмала, производство которой находится в других странах. Индустрия компостирования пока недостаточно развита в России. Мы провели опрос среди наших клиентов, оказалось, что большая часть из них ее не компостирует. Поэтому мы решили, сменить ее, сократить транспортный след от доставки упаковки и выбрать отечественных производителей — это поможет снизить количество парниковых газов, которые влияют на изменения климата.
+
+        section.advantages
+            .container
+                h2.advantages__title.title Преимущества
+                ul.advantages__list
+                    li.advantages__item
+                        .advantages__head
+                            span.advantages__small в 
+                            | 50
+                            span.advantages__small  раз
+                        p.advantages__text Уменьшаются вредные  сбросы в водоёмы при производстве пластиковых пакетов вместо бумажных
+                    li.advantages__item
+                        .advantages__head
+                            span.advantages__small на 
+                            | 70%
+                        p.advantages__text Меньше вредных веществ выбрасывается в атмосферу.
+                    li.advantages__item
+                        .advantages__head
+                            span.advantages__small на 
+                            | 60%
+                        p.advantages__text Сокращается использование электроэнергии при использовании упаковки из перерабатываемого пластика.
+                    li.advantages__item
+                        .advantages__head
+                            | ≈7,4
+                            span.advantages__small  м3
+                        p.advantages__text Пространства свалки экономится благодаря сдаче пластика на переработку
+                    li.advantages__item
+                        .advantages__head.advantages__head--caption Переработка легче
+                        p.advantages__text Пластиковый пакет проще переработать, чем бумажный, из-за отсутствия химических примесей в составе и глубокой прокраски.
+                    li.advantages__item
+                        .advantages__head.advantages__head--caption Не вырубается лес
+                        p.advantages__text При производстве пластиковой упаковки не требуется древесина.
+                
         section.map-tab
             .container
                 .map-tab__text-wrap
@@ -28,12 +194,12 @@ block content
                             span.map-tab__tab-name Контейнеры компании<br> МКМ-Логистика
                     .map-tab__tabs
                         .map-tab__map.active#tab-content-1(data-item-tab="tab-1")
-                            img.map-tab__img(src="assets/images/bottle-min.png", alt="")
+                            img.map-tab__img(src="assets/images/map-min.png", alt="")
                         .map-tab__map#tab-content-2(data-item-tab="tab-2")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
                         .map-tab__map#tab-content-3(data-item-tab="tab-3")
-                            img.map-tab__img(src="assets/images/bottle-min.png", alt="")
+                            img.map-tab__img(src="assets/images/map-min.png", alt="")
                         .map-tab__map#tab-content-4(data-item-tab="tab-4")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
                     .map-tab__small Ближайший пункт приёма пластиковых пакетов на переработку вы можете найти на интерактивной карте Greenpeace — 
-                        a.map-tab__small-link(href="#") recyclemap.ru
+                        a.map-tab__small-link(href="https://recyclemap.ru/") recyclemap.ru

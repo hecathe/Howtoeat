@@ -2,14 +2,41 @@
 	--content-p-r: 0;
 }
 
+//colors
+$color-black: #000000;
+$color-light-black: #181818;
+$color-light-black-2: #242424;
+$color-light-black-3: #2A2A2A;
+$color-dark-grey: #313131;
+$color-grey: #5B5B5B;
+$color-foot: #68717B;
+$color-light-grey: #C4C4C4;
+$color-white: #FFFFFF;
+$color-yellow: #FFFF02;
+
 // Размеры
 $content-max-weight: 1240px;
 
-@import "./common/fonts.scss";
+@import "./common/normalize";
+@import "./common/fonts";
 
 * {
 	box-sizing: border-box;
 	outline-offset: 4px;
+}
+
+body {
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    line-height: 140%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
 }
 
 // https://github.com/WICG/focus-visible
@@ -49,8 +76,9 @@ $content-max-weight: 1240px;
 }
 
 .title {
-	font-size: 28px;
-	line-height: 140%;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: uppercase;
 	margin: 0;
 }
 
