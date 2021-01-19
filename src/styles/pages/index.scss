@@ -251,7 +251,7 @@ $color-yellow: #FFFF02;
 //cause
 .cause {
 	padding: 62px 0 24px;
-	background: linear-gradient(to bottom, #c5c5c5 80%, #ffffff);
+	background: linear-gradient(to bottom, #c5c5c5 80%, transparent);
 	
 	.container {
 		display: flex;
