@@ -602,7 +602,7 @@ p {
 
 .cause {
   padding: 62px 0 24px;
-  background: linear-gradient(to bottom, #c5c5c5 80%, #ffffff); }
+  background: linear-gradient(to bottom, #c5c5c5 80%, transparent); }
   .cause .container {
     display: flex; }
   @media screen and (max-width: 767px) {
