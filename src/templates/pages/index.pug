@@ -13,7 +13,9 @@ block content
                     p.banner__text Выбирая упаковку из пластика и сдавая ее на переработку после использования, мы возвращаем ценные ресурсы в цикл производства.
                     a.banner__btn(href="#why") Почему мы перешли на пластик?
                 .banner__img-wrap
-                    img(src="assets/images/transparent-food-container-min.png", srcset="assets/images/transparent-food-container@2x-min.png" alt="Новый eco подход")
+                    picture
+                        source(srcset="assets/images/transparent-food-container@2x-min.png 2x")
+                        img(src="assets/images/transparent-food-container-min.png" alt="Новый eco подход")
         section.package
             .container
                 h2.package__title.title Наша упаковка
@@ -134,7 +136,9 @@ block content
         section.cause#why
             .container
                 .cause__img-wrap
-                    img.cause__img(src="assets/images/recycle-min.png", srcset="assets/images/recycle@2x-min.png" alt="Почему мы переходим на пластик")
+                    picture
+                        source(srcset="assets/images/recycle@2x-min.png 2x")
+                        img.cause__img(src="assets/images/recycle-min.png" alt="Почему мы переходим на пластик")
                 .cause__text-wrap
                     h2.cause__title.title Почему мы переходим на пластик
                     p.cause__notice Используя и сдавая на переработку посуду и приборы из пластика, мы возвращаем ценные ресурсы в цикл производства. 
@@ -196,11 +200,35 @@ block content
                     .map-tab__tabs
                         .map-tab__map.active#tab-content-1(data-item-tab="tab-1")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
+                            .map-tab__ctrl
+                                .map-tab__info Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl
+                                .map-tab__info Нажмите для просмотра карты
+                            .map-tab__y-map
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b701dabd6d29a95630d9a034c9cb041ded21a93344a07590d086425ec24b2fb&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                            //- .map-tab__y-map#map1
                         .map-tab__map#tab-content-2(data-item-tab="tab-2")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
+                            .map-tab__ctrl
+                                .map-tab__info Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl
+                                .map-tab__info Нажмите для просмотра карты
+                            .map-tab__y-map
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf6a13d8ffc63353decff0431828467f93e425760d8c637c398e57f641e791f6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                            //- .map-tab__y-map#map2
                         .map-tab__map#tab-content-3(data-item-tab="tab-3")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
+                            .map-tab__ctrl
+                                .map-tab__info Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl
+                                .map-tab__info Нажмите для просмотра карты
+                            .map-tab__y-map
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed320172d0842091bf5ffde368ecf13ac17ab8bafe6269a606c3b3cdbeec659e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                            //- .map-tab__y-map#map3
                         .map-tab__map#tab-content-4(data-item-tab="tab-4")
                             img.map-tab__img(src="assets/images/map-min.png", alt="")
+                            .map-tab__ctrl
+                                .map-tab__info Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl
+                                .map-tab__info Нажмите для просмотра карты
+                            .map-tab__y-map
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abb9caa7ac6e8defe5c777cd02d832b26e2bd76dbe2f4700c19b3c03b04c63c1c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                            //- .map-tab__y-map#map4
                     .map-tab__small Ближайший пункт приёма пластиковых пакетов на переработку вы можете найти на интерактивной карте Greenpeace — 
                         a.map-tab__small-link(href="https://recyclemap.ru/") recyclemap.ru
