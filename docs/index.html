@@ -7,10 +7,10 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="apple-touch-icon" href="assets/images/fav.png">
-    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon-16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=c4a97329-5172-4985-a1bd-9aa314e5cb92&amp;load=package.standard&amp;lang=ru-RU"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -27,7 +27,11 @@
               <h1 class="banner__title">НОВЫЙ ECO ПОДХОД</h1>
               <p class="banner__text">Выбирая упаковку из пластика и сдавая ее на переработку после использования, мы возвращаем ценные ресурсы в цикл производства.</p><a class="banner__btn" href="#why">Почему мы перешли на пластик?</a>
             </div>
-            <div class="banner__img-wrap"><img src="assets/images/transparent-food-container-min.png" srcset="assets/images/transparent-food-container@2x-min.png" alt="Новый eco подход"></div>
+            <div class="banner__img-wrap">
+              <picture>
+                <source srcset="assets/images/transparent-food-container@2x-min.png 2x"><img src="assets/images/transparent-food-container-min.png" alt="Новый eco подход">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="package">
@@ -206,7 +210,11 @@
         </section>
         <section class="cause" id="why">
           <div class="container">
-            <div class="cause__img-wrap"><img class="cause__img" src="assets/images/recycle-min.png" srcset="assets/images/recycle@2x-min.png" alt="Почему мы переходим на пластик"></div>
+            <div class="cause__img-wrap">
+              <picture>
+                <source srcset="assets/images/recycle@2x-min.png 2x"><img class="cause__img" src="assets/images/recycle-min.png" alt="Почему мы переходим на пластик">
+              </picture>
+            </div>
             <div class="cause__text-wrap">
               <h2 class="cause__title title">Почему мы переходим на пластик</h2>
               <p class="cause__notice">Используя и сдавая на переработку посуду и приборы из пластика, мы возвращаем ценные ресурсы в цикл производства. </p>
@@ -269,10 +277,18 @@
                 </div>
               </div>
               <div class="map-tab__tabs">
-                <div class="map-tab__map active" id="tab-content-1" data-item-tab="tab-1"><img class="map-tab__img" src="assets/images/map-min.png" alt=""></div>
-                <div class="map-tab__map" id="tab-content-2" data-item-tab="tab-2"><img class="map-tab__img" src="assets/images/map-min.png" alt=""></div>
-                <div class="map-tab__map" id="tab-content-3" data-item-tab="tab-3"><img class="map-tab__img" src="assets/images/map-min.png" alt=""></div>
-                <div class="map-tab__map" id="tab-content-4" data-item-tab="tab-4"><img class="map-tab__img" src="assets/images/map-min.png" alt=""></div>
+                <div class="map-tab__map active" id="tab-content-1" data-item-tab="tab-1"><img class="map-tab__img" src="assets/images/map-min.png" alt="">
+                  <div class="map-tab__y-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b701dabd6d29a95630d9a034c9cb041ded21a93344a07590d086425ec24b2fb&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+                </div>
+                <div class="map-tab__map" id="tab-content-2" data-item-tab="tab-2"><img class="map-tab__img" src="assets/images/map-min.png" alt="">
+                  <div class="map-tab__y-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf6a13d8ffc63353decff0431828467f93e425760d8c637c398e57f641e791f6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+                </div>
+                <div class="map-tab__map" id="tab-content-3" data-item-tab="tab-3"><img class="map-tab__img" src="assets/images/map-min.png" alt="">
+                  <div class="map-tab__y-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aed320172d0842091bf5ffde368ecf13ac17ab8bafe6269a606c3b3cdbeec659e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+                </div>
+                <div class="map-tab__map" id="tab-content-4" data-item-tab="tab-4"><img class="map-tab__img" src="assets/images/map-min.png" alt="">
+                  <div class="map-tab__y-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abb9caa7ac6e8defe5c777cd02d832b26e2bd76dbe2f4700c19b3c03b04c63c1c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+                </div>
               </div>
               <div class="map-tab__small">Ближайший пункт приёма пластиковых пакетов на переработку вы можете найти на интерактивной карте Greenpeace — <a class="map-tab__small-link" href="https://recyclemap.ru/">recyclemap.ru</a></div>
             </div>
