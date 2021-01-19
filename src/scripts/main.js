@@ -1,6 +1,3 @@
-let text = "Привет Васян";
-console.log(text);
-
 //tabs
 for (const tabs of document.querySelectorAll("[data-tab]")) {
     const buttons = tabs.querySelectorAll("[data-nav-tab]");
@@ -15,3 +12,18 @@ for (const tabs of document.querySelectorAll("[data-tab]")) {
         });
     }
 }
+
+//anchor
+var anchors = document.querySelectorAll('.banner__btn');
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      let blockID = anchor.getAttribute('href').substr(1),
+        offset = document.getElementById(blockID).getBoundingClientRect().top;
+      window.scrollTo({
+        behavior: 'smooth',
+        top: offset - 0
+      })
+    })
+  }

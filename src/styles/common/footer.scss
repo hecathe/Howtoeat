@@ -5,10 +5,18 @@
 .footer__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 767px) {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+	}
 }
 .footer__text, .footer__link {
     font-weight: 500;

@@ -1,6 +1,9 @@
 .header {
     position: absolute;
-    padding-top: 27px;
-    padding-left: 8%;
-    z-index: 3;
+    width: 100%;
+    z-index: 4;
+
+    .container {
+        padding-top: 27px;
+    }
 }
