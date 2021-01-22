@@ -67,16 +67,39 @@ $color-yellow: #FFFF02;
 	}
 }
 .banner__btn {
+	position: relative;
 	max-width: 370px;
 	display: block;
 	text-align: center;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 20px;
-	color: $color-white;
+	color: $color-black;
 	text-decoration: none;
-	background-color: $color-light-black-3;
+	border: 2px solid $color-light-black-3;
+	// background-color: $color-light-black-3;
 	padding: 20px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 0;
+		height: 100%;
+		top: 0;
+		left: 0%;
+		background-color: $color-light-black-3;
+		z-index: -1;
+		transition: all 0.3s ease-out;
+	}
+
+	&:hover {
+		color: $color-white;
+		&::before {
+			width: 100%;
+			left: 0;
+			transition: all 0.3s ease-out;
+		}
+	}
 
 	@media screen and (max-width: 1050px) {
 		font-size: 16px;
@@ -87,6 +110,7 @@ $color-yellow: #FFFF02;
 		padding: 10px;
 	}
 }
+
 .banner__img-wrap {
 	position: relative;
 	max-width: 607px;
